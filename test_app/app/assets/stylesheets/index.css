@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x:hidden;
+    background-image: url('https://images.app.goo.gl/4N35jy3xYxbAgTZb8');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    /* background-color: blue; */
+    display: block;
+    min-height: 15vh !important;
+    position: static;
+    font-size: 12vh;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.body_container {
+    display: flex;
+    position: static;
+    top: 22vh;
+    min-height: 85vh;
+}
+
+.timers_container {
+    min-width: 82vw;
+    /* background-color: coral; */
+    padding: 15px;
+}
+
+aside {
+    min-width: 18vw;
+    /* background-color: red; */
+}
+
+.alarm {
+    margin-left: 6.25 vw;
+    position: relative;
+    outline: 10px;
+    /* outline-color: ; */
+}
+
+
+.task_views {
+    min-height: 8vh;
+    min-width: 100%;
+    margin-right: 0;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    list-style-type: none;
+    box-shadow:inset 0px -2px 0px 0px rgba(190, 98, 255, 0.466);
+    
+}
+
+/* alarms */
+.alarm_item {
+    min-height: 12vh;
+    min-width: 70vw;
+    position: relative;
+    left: 3.25vw;
+    margin-bottom: 3vh;
+    margin-right: 12vw;
+    background-color: #a55150;
+    list-style-type: none; 
+}
+.alarm_text {
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-size: 5vh;
+    color: black;
+}
+.alarm_countdown {
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 5vh;
+}
+
+@keyframes timer_animation{
+    from{width:0;}
+    to{width:100%;}
+}
+
+.timer_bar{
+    background-color: #a22522;
+    min-height: inherit;
+    z-index: 2;
+    animation-name: timer_animation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }

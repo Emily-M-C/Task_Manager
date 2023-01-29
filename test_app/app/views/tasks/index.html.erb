@@ -1,8 +1,12 @@
+<%= stylesheet_link_tag "index.css" %>
+<%= javascript_tag 'timer' %>
 
 
+<header>
+    <div class="title"><strong>CAFE</strong></div>
+</header>
 
-
-<div class="tasks index">
+<div id="text" class="tasks index">
     <h2>Tasks</h2>
 
     <%= link_to("Add New Task", new_task_path, class: 'action new') %>
@@ -29,6 +33,7 @@
         <%= link_to("Delete", delete_task_path(task), class: 'action delete') %>
         </td>
     </tr>
+
     <% end %>
     </table>
 </div>
