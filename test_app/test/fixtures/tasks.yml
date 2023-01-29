@@ -2,12 +2,14 @@
 
 one:
   name: MyString
-  description: MyText
   position: 1
-  completed: false
+  start_time: 2023-01-28 18:14:27
+  deadline: 2023-01-28 18:14:27
+  notification: MyText
 
 two:
   name: MyString
-  description: MyText
   position: 1
-  completed: false
+  start_time: 2023-01-28 18:14:27
+  deadline: 2023-01-28 18:14:27
+  notification: MyText

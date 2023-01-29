@@ -8,11 +8,15 @@
         <td><%= f.text_field(:position) %></td>
     </tr>
     <tr>
-        <th>Completed</th>
-        <td><%= f.check_box(:completed) %></td>
+        <th>Start Time</th>
+        <td><%= f.datetime_field(:start_time) %></td>
     </tr>
     <tr>
-        <th>Description</th>
-        <td><%= f.text_area(:description) %></td>
+        <th>Deadline</th>
+        <td><%= f.datetime_field(:deadline) %></td>
+    </tr>
+    <tr>
+        <th>Notification Options</th>
+        <td><%= f.text_area(:notification) %></td>
     </tr>
 </table>
