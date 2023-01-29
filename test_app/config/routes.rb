@@ -1,16 +1,10 @@
 Rails.application.routes.draw do
-  root "main#index"
+  root "tasks#index"
 
-  match 'about', to: "main#about", via: :get
-  match 'hello', to: "main#hello", via: :get
+  match 'about', to: "tasks#about", via: :get
+  match 'hello', to: "tasks#hello", via: :get
 
-  get 'main/index'
-
-  resources :categories do
-    member do
-      get :delete
-    end
-  end
+  get 'tasks/index'
   
   resources :tasks do
     member do
